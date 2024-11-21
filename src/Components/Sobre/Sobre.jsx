@@ -13,7 +13,7 @@ export default function Sobre() {
         </p>
         <button>SAIBA MAIS</button>
       </div>
-      <img src="src\assets\media\grao-cafe.png" alt="grão de café" />
+      <img src=".\media\grao-cafe.png" alt="grão de café" />
     </SobreStyle>
   );
 }

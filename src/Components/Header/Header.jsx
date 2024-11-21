@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <HeaderStyle>
       <Link to="/">
-        <img src="../../src/assets/media/logo-starbucks.png" alt="logomarca" />
+        <img src="./media/logo-starbucks.png" alt="logomarca" />
       </Link>
       <nav>
         <ul>

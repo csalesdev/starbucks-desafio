@@ -17,25 +17,25 @@ export default function Home() {
         <button>SAIBA MAIS</button>
         <figure>
           <img
-            src="src\assets\media\copinho-laranja.png"
+            src=".\media\copinho-laranja.png"
             alt="copo laranja do Starbucks"
           />
           <img
-            src="src\assets\media\copinho-vermelho.png"
+            src=".\media\copinho-vermelho.png"
             alt="copo vermelho do Starbucks"
           />
           <img
-            src="src\assets\media\copinho-amarelo.png"
+            src=".\media\copinho-amarelo.png"
             alt="copo amarelo do Starbucks"
           />
         </figure>
       </section>
       <section className="section2">
         <img
-          src="src\assets\media\copo-laranja.png"
+          src=".\media\copo-laranja.png"
           alt="copo laranja grande do Starbucks"
         />
-        <img src="src\assets\media\background-verde.png" alt="fundo verde" />
+        <img src=".\media\background-verde.png" alt="fundo verde" />
       </section>
     </HomeStyle>
   );

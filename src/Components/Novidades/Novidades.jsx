@@ -3,7 +3,7 @@ import { NovidadesStyle } from "./NovidadesStyle";
 export default function Novidades() {
   return (
     <NovidadesStyle>
-      <img src="src\assets\media\starbucks-image.png" alt="starbucks antigo" />
+      <img src=".\media\starbucks-image.png" alt="starbucks antigo" />
       <div>
         <h4>PREPARAÇÃO</h4>
         <h2>Níveis de torra</h2>
