@@ -1,6 +1,13 @@
 import { HomeStyle } from "./HomeStyle";
+import { useState } from "react";
 
 export default function Home() {
+  const [copoSelecionado, setCopoSelecionado] = useState("laranja");
+
+  const trocarCopo = (cor) => {
+    setCopoSelecionado(cor);
+  };
+
   return (
     <HomeStyle>
       <section>
@@ -17,25 +24,41 @@ export default function Home() {
         <button>SAIBA MAIS</button>
         <figure>
           <img
-            src=".\media\copinho-laranja.png"
+            onMouseOver=""
+            onClick={() => trocarCopo("laranja")}
+            src="./media/copinho-laranja.png"
             alt="copo laranja do Starbucks"
+            className="copinho-laranja"
           />
           <img
-            src=".\media\copinho-vermelho.png"
-            alt="copo vermelho do Starbucks"
-          />
-          <img
-            src=".\media\copinho-amarelo.png"
+            onMouseOver=""
+            onClick={() => trocarCopo("amarelo")}
+            src="./media/copinho-amarelo.png"
             alt="copo amarelo do Starbucks"
+            className="copinho-amarelo"
+          />
+          <img
+            onMouseOver=""
+            onClick={() => trocarCopo("vermelho")}
+            src="./media/copinho-vermelho.png"
+            alt="copo vermelho do Starbucks"
+            className="copinho-vermelho"
           />
         </figure>
       </section>
       <section className="section2">
         <img
-          src=".\media\copo-laranja.png"
-          alt="copo laranja grande do Starbucks"
+          src={`./media/copo-${copoSelecionado}.png`}
+          alt={`copo ${copoSelecionado} grande do Starbucks`}
         />
-        <img src=".\media\background-verde.png" alt="fundo verde" />
+        <img
+          src={
+            copoSelecionado === "laranja"
+              ? "./media/background-verde.png"
+              : `./media/background-${copoSelecionado}.png`
+          }
+          alt={`fundo do copo ${copoSelecionado}`}
+        />
       </section>
     </HomeStyle>
   );

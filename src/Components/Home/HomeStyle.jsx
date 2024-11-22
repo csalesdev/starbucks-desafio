@@ -15,6 +15,12 @@ export const HomeStyle = styled.main`
       position: relative;
       bottom: 120px;
       left: 70px;
+
+      .copinho-amarelo:hover,
+      .copinho-vermelho:hover,
+      .copinho-laranja:hover {
+        transform: rotate(10deg) translateY(-10px);
+      }
     }
   }
   h1 {
