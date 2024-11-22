@@ -48,6 +48,10 @@ export const SobreStyle = styled.section`
     margin-top: 40px;
   }
 
+  button:hover {
+    background-color: #024428;
+  }
+
   img {
     width: 38%;
   }

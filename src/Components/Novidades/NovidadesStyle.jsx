@@ -37,7 +37,9 @@ export const NovidadesStyle = styled.section`
     padding-top: 3px;
     margin-top: 40px;
   }
-
+  button:hover {
+    background-color: #024428;
+  }
   img {
     width: 25%;
   }

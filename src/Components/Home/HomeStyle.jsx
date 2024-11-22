@@ -9,12 +9,13 @@ export const HomeStyle = styled.main`
 
     figure {
       display: flex;
-      padding-top: 30%;
+      margin-top: 30%;
       justify-content: right;
       gap: 33px;
       position: relative;
       bottom: 120px;
       left: 70px;
+      z-index: 1;
 
       .copinho-amarelo:hover,
       .copinho-vermelho:hover,
@@ -60,6 +61,12 @@ export const HomeStyle = styled.main`
     font-weight: 700;
     padding-top: 3px;
     margin-top: 25px;
+
+    z-index: -2;
+  }
+
+  button:hover {
+    background-color: #024428;
   }
 
   .section2 {
